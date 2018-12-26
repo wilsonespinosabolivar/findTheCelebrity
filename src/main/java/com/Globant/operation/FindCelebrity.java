@@ -16,20 +16,8 @@ public class FindCelebrity {
     } 
  
     /**
-     * Finds the celebrity in {@param peoples} where 
-     * peoples[i][j] is 1 when person i knows person j. 
-     * <p/> 
-     * Algorithm: 
-     * - If A knows B, then A can’t be celebrity. Discard A, but B may be celebrity. 
-     * - If A does not know B, then B can’t be celebrity. Discard B, but A may be celebrity. 
-     * - Repeat above two steps till we left with only one person. 
-     * Find celebrity within remaining persons by performing the below operations: 
-     * - Push all the celebrities into a stack. 
-     * - Pop off top two persons from the stack, discard one person based on return status of HaveAcquaintance(A, B). 
-     * - Push the remained person onto stack. 
-     * - Repeat step 2 and 3 until only one person remains in the stack. 
-     * - Check the remained person in stack does not have acquaintance with anyone else. 
-     *  
+     * Finds the celebrity in {@param guests} where 
+     * peoples[i][j] is 1 when person i knows person j.   
      * @param peoples 
      * @return 
      */ 
